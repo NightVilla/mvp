@@ -19,8 +19,8 @@ class LoginPresenter(var context: Context) : LoginContract.Presenter {
     override fun onLoginButtonClicked(email: String, password: String) {
 
         loginModel?.let {
-            Log.d(ConstValues.TAG, "P_info : " + email)
-            Log.d(ConstValues.TAG, "P_info : " + password)
+            Log.d(ConstValues.TAG, "P_info_branch : " + email)
+            Log.d(ConstValues.TAG, "P_info_branch : " + password)
             val userResult = it.login(email, password)
 
            if (userResult)
